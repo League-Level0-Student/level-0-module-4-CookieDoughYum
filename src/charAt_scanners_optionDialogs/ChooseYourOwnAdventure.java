@@ -29,6 +29,20 @@ public static void main(String[] args) {
 				 if(walk3==1) {
 					 JOptionPane.showMessageDialog(null, "You decide to keep everything a secret. The next day you take a walk, and a grizzly bear kills you");
 				 }
+				 if(walk3==0) {
+					 String[] options4 = {"Go inside", "Go home"};
+					 int walk4 = JOptionPane.showOptionDialog(null, "Mom becomes very interested in the mysterious house. Then, you walk with your mom, the same path you walked and step inside the house. Then, you see a portal leading to another universe. What should you do?",
+				             "Option 4",
+				             JOptionPane.DEFAULT_OPTION, JOptionPane.INFORMATION_MESSAGE, null,  options4, options4[0]);
+					 if(walk4==1) {
+						 JOptionPane.showMessageDialog(null, "The next day you take a walk, and a grizzly bear kills you");
+					 }
+					 
+					 if(walk4==0) {
+						 JOptionPane.showMessageDialog(null, "You and your mom goes into the portal. The other universe looks very pretty. There are giant trees, cotton candy clouds, and so on. You learn skills on how to defeat a bear. Then, you get a giant sword and kill the bear in your world! You become famous, and everyone remembers you");
+					 }
+				 }
+				 
 			 }
 			 if(walk2==0) {
 				JOptionPane.showMessageDialog(null, "You attack it with all of your might, and it dies! You can't wait to tell mom and the rest of the world about your epic kill!");
@@ -40,9 +54,21 @@ public static void main(String[] args) {
 			 int walk3 = JOptionPane.showOptionDialog(null, "You make it home safely. You wonder if you should tell mom or not. What should you do?",
 		             "Option 3",
 		             JOptionPane.DEFAULT_OPTION, JOptionPane.INFORMATION_MESSAGE, null,  options3, options3[0]);
-			 System.out.println(walk3);
 			 if(walk3==1) {
 				 JOptionPane.showMessageDialog(null, "You decide to keep everything a secret. The next day you take a walk, and a grizzly bear kills you");
+			 }
+			 if(walk3==0) {
+				 String[] options4 = {"Go inside", "Go home"};
+				 int walk4 = JOptionPane.showOptionDialog(null, "Mom becomes very interested in the mysterious house. Then, you walk with your mom, the same path you walked and step inside the house. Then, you see a portal leading to another universe. What should you do?",
+			             "Option 4",
+			             JOptionPane.DEFAULT_OPTION, JOptionPane.INFORMATION_MESSAGE, null,  options4, options4[0]);
+				 
+				 if(walk4==1) {
+					 JOptionPane.showMessageDialog(null, "You decide to keep everything a secret. The next day you take a walk, and a grizzly bear kills you");
+				 }
+				 if(walk4==0) {
+					 JOptionPane.showMessageDialog(null, "You and your mom goes into the portal. The other universe looks very pretty. There are giant trees, cotton candy clouds, and so on. You learn skills on how to defeat a bear. Then, you get a giant sword and kill the bear in your world! You become famous, and everyone remembers you");
+				 }
 			 }
 	 }
 	 if(walk==0) {
@@ -50,6 +76,13 @@ public static void main(String[] args) {
 			 int walk4 = JOptionPane.showOptionDialog(null, "You step inside the house. You then see a portal, leading to another universe. What should you do?",
 		             "Option 4",
 		             JOptionPane.DEFAULT_OPTION, JOptionPane.INFORMATION_MESSAGE, null,  options4, options4[0]);
+			 
+			 if(walk4==1) {
+				 JOptionPane.showMessageDialog(null, "The next day you take a walk, and a grizzly bear kills you");
+			 }
+			 if(walk4==0) {
+				 JOptionPane.showMessageDialog(null, "You and your mom goes into the portal. The other universe looks very pretty. There are giant trees, cotton candy clouds, and so on. You learn skills on how to defeat a bear. Then, you get a giant sword and kill the bear in your world! You become famous, and everyone remembers you");
+			 }
 	 }
 	 
 	 
