@@ -26,7 +26,7 @@ public static void main(String[] args) {
 		three=temp;
 	}
 	
-	if(two<three) {
+	if(two>three) {
 		temp=two;
 		two=three;
 		three=temp;
@@ -46,15 +46,22 @@ public static void main(String[] args) {
 	String Sorter6=JOptionPane.showInputDialog("Pick a number");
 	int three1=Integer.parseInt(Sorter6);
 	if(one1<two1) {
-		two1=one1;
+		temp=one1;
+		one1=two1;
+		two1=temp;
+		
 	}
 	
 	if(one1<three1) {
-		three1=one1;
+		temp=one1;
+		one1=three1;
+		three1=temp;
 	}
 	
 	if(two1<three1) {
-		three1=two1;
+		temp=two1;
+		two1=three1;
+		three1=temp;
 	}
 	
 	System.out.println(one1);
